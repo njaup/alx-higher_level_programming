@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
+uppercase = __import__('8-uppercase').uppercase
 
-def uppercase(s):
-    for char in s:
-        if ord('a') <= ord(char) <= ord('z'):
-            uppercase_char = chr(ord(char) - ord('a') + ord('A'))
-            print(uppercase_char, end='')
-        else:
-            print(char, end='')
-
-            print()
+uppercase("best")
+uppercase("Best School 98 Battery street")
