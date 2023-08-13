@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#Author - Peter Njau
+# Author - Peter Njau
 for l in range(97, 123):
     if chr(l) != 'q' and chr(l) != 'e':
         print("{}".format(chr(l)), end="")
