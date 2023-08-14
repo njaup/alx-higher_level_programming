@@ -1,5 +1,6 @@
+#!/usr/bin/python3
 def divisible_by_2(my_list=[]):
-    total = []
-    for count in my_list:
-        total.append(count % 2 == 0)
-    return total
+    result = []
+    for num in my_list:
+        result.append(num % 2 == 0)
+    return result
