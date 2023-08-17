@@ -4,5 +4,5 @@ b = 2
 
 import add_0
 result = add_0.add(a, b)
-print("{a} + {b} = {result}".format(a, b, add(a, b)))
+print("{} + {} = {}".format(a, b, add(a, b)))
 
