@@ -8,7 +8,8 @@ def main():
     if num_arguments == 0:
         print("0 arguments.")
     elif num_arguments == 1:
-        print("1 argument:\n1: Hello")
+        print("1 argument:")
+        print("1:", argv[0])
     else:
         print(f"{num_arguments} arguments:")
 
