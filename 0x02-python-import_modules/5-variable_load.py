@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 def main():
-    module = __import__("variable_load_5")
-    a = getattr(module, "a")
+    from variable_load_5 import a
     print(a)
 
 if __name__ == "__main__":
