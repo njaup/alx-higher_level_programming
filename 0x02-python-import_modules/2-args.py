@@ -6,11 +6,11 @@ def main():
     num_arguments = len(argv)
 
     if num_arguments == 0:
-        print("Number of argument(s): 0\n.")
+        print("0 arguments.")
     elif num_arguments == 1:
-        print("Number of argument(s): 1\n1:", argv[0])
+        print("1 argument:\n1: Hello")
     else:
-        print(f"Number of argument(s): {num_arguments}\n:")
+        print(f"{num_arguments} arguments:")
 
         for i, arg in enumerate(argv, start=1):
             print(f"{i}: {arg}")
