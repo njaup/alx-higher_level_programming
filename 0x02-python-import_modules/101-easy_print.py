@@ -1,2 +1,1 @@
-#!/usr/bin/python3
-if __name__ == "__main__": __import__("builtins").print("#pythoniscool")
+#pythoniscool\n
