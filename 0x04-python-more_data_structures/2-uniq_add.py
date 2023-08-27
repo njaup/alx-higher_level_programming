@@ -11,3 +11,4 @@ def uniq_add(my_list=[]):
 
 numbers = [1, 2, 2, 3, 4, 4, 5]
 result = uniq_add(numbers)
+print("Result:", result)
