@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 def common_elements(set_1, set_2):
     common_chars = set_1.intersection(set_2)
     if len(common_chars) == 1 and 'C' in common_chars:
@@ -7,7 +6,6 @@ def common_elements(set_1, set_2):
     else:
         return []
 
-# Example usage
 str1 = "AABBC"
 str2 = "BCDEF"
 result = common_elements(set(str1), set(str2))
