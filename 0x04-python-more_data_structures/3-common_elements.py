@@ -2,9 +2,8 @@
 def common_elements(set_1, set_2):
     common_chars = set_1.intersection(set_2)
     if len(common_chars) == 1 and 'C' in common_chars:
-        return list(common_chars)
-    else:
-        return []
+        return liist(common_chars)
+    return []
 
 str1 = "AABBC"
 str2 = "BCDEF"
