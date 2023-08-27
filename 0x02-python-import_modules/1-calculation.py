@@ -1,10 +1,17 @@
 #!/usr/bin/python3
-if _name_ == "_main_":
-    from calculator_1 import add, subtract, multiply, divide
-    a = 10
-    b = 5
 
-print("{} + {} = {}".format(a, b, add(a, b)))
-print("{} - {} = {}".format(a, b, sub(a, b)))
-print("{} * {} = {}".format(a, b, mul(a, b)))
-print("{} / {} = {}".format(a, b, div(a, b)))
+from calculator_1 import addition, subtraction, multiplication, division
+
+a = 10
+b = 5
+
+result_add = addition(a, b)
+result_subtract = subtraction(a, b)
+result_multiply = multiplication(a, b)
+result_divide = division(a, b)
+
+print("Results:")
+print("Addition:", result_add)
+print("Subtraction:", result_subtract)
+print("Multiplication:", result_multiply)
+print("Division:", result_divide)
