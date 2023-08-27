@@ -8,6 +8,7 @@ def search_replace(my_list, search, replace):
             new_list.append(item)
     return new_list
 
-initial_list = [1, 2, 3, 2, 4, 2, 5]
-new_list = search_replace(initial_list, 2, 0)
-print(new_list)
+if __name__ == "__main__":
+    initial_list = [1, 89, 3, 4, 5, 4, 89, 1, 1, 4, 89]
+    new_list = search_replace(initial_list, 89, 2)
+    print(new_list)
