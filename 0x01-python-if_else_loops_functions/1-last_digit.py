@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 import random
-
 number = random.randint(-10000, 10000)
-last_digit = abs(number) % 10
+sign = -1 if number < 0 else 1
+last_digit = sign * (abs(number) % 10)
 print("The string Last digit of")
 print(number)
 print("the string is", last_digit, end=" ")
