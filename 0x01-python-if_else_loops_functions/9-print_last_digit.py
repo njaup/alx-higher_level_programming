@@ -7,4 +7,5 @@ def print_last_digit(num):
     else:
         lastdig = num % 10
         print(lastdig, end='')
+
     return abs(lastdig)
