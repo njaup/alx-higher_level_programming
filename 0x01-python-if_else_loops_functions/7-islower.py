@@ -1,11 +1,7 @@
 #!/usr/bin/python3
 
-def islower(c)
-    return ord('a') <= ord(c) <= ord('z')
-char = 'a'
-result = islower(char)
-print(result)
-
-char = 'B'
-result = islower(char)
-print(result)
+def islower(c):
+    if ord('a') <= ord(c) <= ord('z'):
+        return True
+    else:
+        return False
