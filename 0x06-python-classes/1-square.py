@@ -4,27 +4,13 @@
 
 
 class Square:
-    """
-    A class to represent a square.
-
-    Attributes:
-        __size (int): The size of the square.
-    """
+    """A class to represent a square."""
 
     def __init__(self, size):
-        """
-        Initializes a square with the given size.
-
-        Args:
-            size (int): The size of the square.
-        """
+        """Args:
+            size (int): The size of the square."""
         self.__size = size
 
     def __str__(self):
-        """
-        Returns a string representation of the square.
-
-        Returns:
-            str: A string describing the square.
-        """
+        """Returns a string representation of the square."""
         return f"Square with size: {self.__size}"
