@@ -14,7 +14,7 @@ class Rectangle:
         if not isinstance(data, int):
             raise TypeError("width must be an integer")
         elif data < 0:
-            raise dataError("width must be >= 0")
+            raise valueError("width must be >= 0")
         else:
             self.__width = data
 
@@ -27,6 +27,6 @@ class Rectangle:
         if not isinstance(data, int):
             raise TypeError("height must be an integer")
         elif data < 0:
-            raise dataError("height must be >= 0")
+            raise valueError("height must be >= 0")
         else:
             self.__height = data
