@@ -72,3 +72,11 @@ class Rectangle:
         else:
             self.__height = value
 
+    def __repr__(self):
+        """
+        Return a string representation of the Rectangle.
+
+        Returns:
+            str: A string representation of the Rectangle in dictionary format.
+        """
+        return f"{{'_Rectangle__height': {self.__height}, '_Rectangle__width': {self.__width}}}"
