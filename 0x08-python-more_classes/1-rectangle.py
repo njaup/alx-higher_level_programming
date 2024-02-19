@@ -80,3 +80,10 @@ class Rectangle:
             str: A string representation of the Rectangle in dictionary format.
         """
         return f"{{'_Rectangle__height': {self.__height}, '_Rectangle__width': {self.__width}}}"
+
+# Test the class
+if __name__ == "__main__":
+    r1 = Rectangle(2, 4)
+    r2 = Rectangle(10, 3)
+    print(repr(r1))
+    print(repr(r2))
