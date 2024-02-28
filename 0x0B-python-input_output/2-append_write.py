@@ -15,7 +15,7 @@ def append_write(filename="", text=""):
     Raises:
         Exception: If an error occurs during the file operation."""
     try:
-        with open(filename, 'a', encoding='utf-8') as file:
+        with open(filename, "a", encoding="utf-8") as file:
             file.write(text)
             return len(text)
     except Exception as e:
