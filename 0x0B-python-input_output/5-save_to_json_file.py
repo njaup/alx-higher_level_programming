@@ -12,9 +12,5 @@ def save_to_json_file(my_obj, filename):
 
     Returns:
     None"""
-    try:
         with open(filename, 'w') as file:
             json.dump(my_obj, file)
-        print("Object saved to", filename)
-    except:
-        print("Error saving object to", filename)
