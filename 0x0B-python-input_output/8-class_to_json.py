@@ -1,13 +1,17 @@
 #!/usr/bin/python3
+"""Defines a Python class-to-JSON function."""
+
 
 def class_to_json(obj):
-    """Convert an object into a dictionary containing only serializable data types.
+    """
+    Convert an object into a dictionary containing only serializable data types.
 
     Args:
         obj: An instance of a class.
 
     Returns:
-        A dictionary representation of the object with serializable attributes."""
+        A dictionary representation of the object with serializable attributes.
+    """
     if isinstance(obj, (str, int, bool)):
         return obj
     elif isinstance(obj, list):
