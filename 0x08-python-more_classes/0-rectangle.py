@@ -1,15 +1,12 @@
 #!/usr/bin/python3
+"""Defines a Rectangle class."""
+
 
 class Rectangle:
-    def __init__(self, leng, wid):
-        self.leng = leng
-        self.wid = wid
+    """A class representing a rectangle:
+    - length (float): The length of the rectangle.
+    - width (float): The width of the rectangle."""
 
-    def area(self):
-        return self.leng * self.wid
-
-    def perimeter(self):
-        return 2 * (self.leng + self.wid)
-
-    def is_square(self):
-        return self.leng == self.wid
+    def __init__(self):
+        """Initializes a Rectangle object."""
+        pass
