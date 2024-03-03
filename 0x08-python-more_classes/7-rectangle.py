@@ -4,7 +4,6 @@
 
 class Rectangle:
     """A class to represent a rectangle."""
-
     number_of_instances = 0
     print_symbol = "#"
 
@@ -18,6 +17,7 @@ class Rectangle:
 
     @property
     def width(self):
+        """int: The width of the rectangle."""
         return self.__width
 
     @width.setter
