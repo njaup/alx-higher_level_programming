@@ -1,0 +1,18 @@
+# `0-add_integer.py` Documentation
+
+## Introduction
+This script, `0-add_integer.py`, provides a function to add two integers together. It's designed to be simple and easy to use.
+
+## Usage
+To use this script, follow these steps:
+
+1. Import the `add_integer` function from the `add_integer` module.
+2. Call the `add_integer` function with two integer arguments.
+3. The function will return the sum of the two integers.
+
+Example:
+```python
+from add_integer import add_integer
+
+result = add_integer(5, 10)
+print("Result:", result)
