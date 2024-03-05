@@ -1,8 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "hash_tables.h"
-
-#define INITIAL_CAPACITY 10
 
 /**
  * hash_table_create - Creates a hash table.
@@ -12,49 +8,19 @@
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	if (size == 0)
-	{
+	hash_table_t *ht;
+	unsigned long int index;
+
+	ht = malloc(sizeof(hash_table_t));
+	if (ht == NULL)
 		return (NULL);
-	}
 
-	hash_table_t *hash_table = malloc(sizeof(hash_table_t));
-
-	if (hash_table == NULL)
-	{
+	ht->size = size;
+	ht->array = malloc(sizeof(hash_node_t *) * size);
+	if (ht->array == NULL)
 		return (NULL);
-	}
+	for (index = 0; index < size; index++)
+		ht->array[index] = NULL;
 
-	hash_table->size = size;
-	hash_table->array = malloc(size * sizeof(void *));
-	if (hash_table->array == NULL)
-	{
-		free(hash_table);
-		return (NULL);
-	}
-
-	for (unsigned long int i = 0; i < size; ++i)
-	{
-		hash_table->array[i] = NULL;
-	}
-
-	return (hash_table);
-}
-/**
- * main - Executes the program
- * Return: 0.
- */
-int main(void)
-{
-	hash_table_t *my_hash_table = hash_table_create(INITIAL_CAPACITY);
-
-	if (my_hash_table == NULL)
-	{
-		printf("Failed to create hash table\n");
-		return (1);
-	}
-
-	free(my_hash_table->array);
-	free(my_hash_table);
-
-	return (0);
+	return (ht);
 }
