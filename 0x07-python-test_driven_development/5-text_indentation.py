@@ -1,25 +1,27 @@
 #!/usr/bin/python3
-"""Defines a square-printing function."""
+"""Defines a text-indentation function."""
 
 
 def text_indentation(text):
-    """Prints the text with 2 new lines after each '.', '?', and ':' characters.
-
+    """Print text with two new lines after each '.', '?', and ':'.
     Args:
-        text (str): The input text to be processed.
+        text (string): The text to print.
     Raises:
-        TypeError: If the input text is not a string."""
+        TypeError: If text is not a string."""
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
-    new_line_added = False
+    index = 0
+    while index < len(text) and text[index] == ' ':
+        index += 1
 
-    for char in text:
-        if not new_line_added and char.strip() != '':
-            print(char, end='')
-            new_line_added = True
-        elif char in ['.', '?', ':']:
-            print(char + '\n')
-            new_line_added = False
-        else:
-            print(char, end='')
+    while index < len(text):
+        print(text[index], end="")
+        if text[index] == "\n" or text[index] in ".?:":
+            if text[index] in ".?:":
+                print("\n")
+            index += 1
+            while index < len(text) and text[index] == ' ':
+                index += 1
+            continue
+        index += 1
